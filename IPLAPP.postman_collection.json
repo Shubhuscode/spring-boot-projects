@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "f88c959f-2f4d-4984-8783-f40b040af73b",
+		"name": "IPLAPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40713425"
+	},
+	"item": [
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Team List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/teams"
+					},
+					"response": []
+				},
+				{
+					"name": "Team Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/teams/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamID\": 5,\n    \"teamName\": \"Delhi Capitals\",\n    \"ownerName\": \"Parth Jindal\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/teams"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/teams/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  Team",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamID\": \"3\",\n    \"teamName\": \"Delhi Capitalseeeee\",\n    \"ownerName\": \"Parth Jindal\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/teams/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "players",
+			"item": [
+				{
+					"name": "players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/players"
+					},
+					"response": []
+				},
+				{
+					"name": "players details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/players/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"playerID\": 6,\n  \"playerName\": \"Shane Watson\",\n  \"nationality\": \"Australia\",\n  \"role\": \"Allrounder\",\n  \"teamID\": 3\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/players"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  players",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"playerID\": 2,\n  \"playerName\": \"Jasprit Bumrah\",\n  \"nationality\": \"India\",\n  \"role\": \"Bowler\",\n  \"teamID\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/players/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete players",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"playerID\": 2,\n  \"playerName\": \"Jasprit Bumrah\",\n  \"nationality\": \"India\",\n  \"role\": \"Bowler\",\n  \"teamID\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/players/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Performances",
+			"item": [
+				{
+					"name": "performances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/performances"
+					},
+					"response": []
+				},
+				{
+					"name": "performances details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/performances/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create performance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"performanceID\": 3,\n  \"runs\": 45,\n  \"balls\": 35,\n  \"wickets\": 0,\n  \"overs\": 4,\n  \"playerID\": 3,\n  \"matchID\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/performances"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  performances",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"performanceID\": 2,\n  \"runs\": 50,\n  \"balls\": 40,\n  \"wickets\": 1,\n  \"overs\": 3,\n  \"playerID\": 2,\n  \"matchID\": 1\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/performances/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete performances",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"playerID\": 2,\n  \"playerName\": \"Jasprit Bumrah\",\n  \"nationality\": \"India\",\n  \"role\": \"Bowler\",\n  \"teamID\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/performances/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "matches",
+			"item": [
+				{
+					"name": "matches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/matches"
+					},
+					"response": []
+				},
+				{
+					"name": "matches details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/matches/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create matches",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"matchID\": 4,\n        \"date\": \"2025-04-02\",\n        \"venue\": \"Feroz Shah Kotla\",\n        \"team1ID\": 2,\n        \"team2ID\": 3,\n        \"result\": \"Delhi Capitals win\",\n        \"team1\": {\n            \"teamID\": 2,\n            \"teamName\": \"Delhi Capitals\",\n            \"ownerName\": \"Parth Jindal\"\n        },\n        \"team2\": {\n            \"teamID\": 3,\n            \"teamName\": \"Chennai Super Kings\",\n            \"ownerName\": \"N. Srinivasan\"\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/matches"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  matches",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"matchID\": 4,\n        \"date\": \"2025-04-02\",\n        \"venue\": \"Feroz Shah Kotla1\",\n        \"team1ID\": 2,\n        \"team2ID\": 3,\n        \"result\": \"Delhi Capitals win1\",\n        \"team1\": {\n            \"teamID\": 2,\n            \"teamName\": \"Delhi Capitals1\",\n            \"ownerName\": \"Parth Jindal1\"\n        },\n        \"team2\": {\n            \"teamID\": 3,\n            \"teamName\": \"Chennai Super Kings1\",\n            \"ownerName\": \"N. Srinivasan1\"\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/matches/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete matches",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/matches/2"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
